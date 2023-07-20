@@ -4,129 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flip The Cards</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div class="wrapper">
-        <div class="stats-container">
-          <div id="moves-count"></div>
-          <div id="time"></div>
+    <div class="controls">
+        <div class="stats">
+            <div class="moves">Moves: 0</div>
+            <div class="timer">Time: 00:00</div>
         </div>
-        <div class="game-container"></div>
-        <button id="stop" class="hide">Stop Game</button>
     </div>
+    <div class="mid">
+        <div class="title">
+            <h1>Flip The Cards</h1>
+        </div>
+        <section class="mem-board">
+            <!-- <div class="blank">kh</div> -->
+            <div class="mem-card" data-name="batman">
+                <img class="front" src="img/batman.png" alt="batman">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+            
+            <div class="mem-card" data-name="captain">
+                <img class="front" src="img/captain.png" alt="captain">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
 
+            <div class="mem-card" data-name="hulk">
+                <img class="front" src="img/hulk.png" alt="hulk">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="firestar">
+                <img class="front" src="img/firestar.png" alt="firestar">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="ironman">
+                <img class="front" src="img/ironman.png" alt="ironman">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="panther">
+                <img class="front" src="img/panther.png" alt="panther">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="thor">
+                <img class="front" src="img/thor.png" alt="thor">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="scarletwitch">
+                <img class="front" src="img/scarletwitch.png" alt="scarletwitch">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="spiderman">
+                <img class="front" src="img/spiderman.jpg" alt="spiderman">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="vis">
+                <img class="front" src="img/vis.png" alt="vis">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+            <div class="mem-card" data-name="batman">
+                <img class="front" src="img/batman.png" alt="batman">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+            
+            <div class="mem-card" data-name="captain">
+                <img class="front" src="img/captain.png" alt="captain">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="hulk">
+                <img class="front" src="img/hulk.png" alt="hulk">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="firestar">
+                <img class="front" src="img/firestar.png" alt="firestar">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="ironman">
+                <img class="front" src="img/ironman.png" alt="ironman">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="panther">
+                <img class="front" src="img/panther.png" alt="panther">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="thor">
+                <img class="front" src="img/thor.png" alt="thor">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="scarletwitch">
+                <img class="front" src="img/scarletwitch.png" alt="scarletwitch">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="spiderman">
+                <img class="front" src="img/spiderman.jpg" alt="spiderman">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+
+            <div class="mem-card" data-name="vis">
+                <img class="front" src="img/vis.png" alt="vis">
+                <img class="back" src="img/question.jpg" alt="BDrop">
+            </div>
+        </section>
+    </div>
     <div class="controls-container">
-      <p id="result"></p>
-      <button id="start">Start Game</button>
-    </div> -->
-    
-    <section class="mem-board">
-        <div class="mem-card" data-name="batman">
-            <img class="front" src="img/batman.png" alt="batman">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-        
-        <div class="mem-card" data-name="captain">
-            <img class="front" src="img/captain.png" alt="captain">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="hulk">
-            <img class="front" src="img/hulk.png" alt="hulk">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="firestar">
-            <img class="front" src="img/firestar.png" alt="firestar">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="ironman">
-            <img class="front" src="img/ironman.png" alt="ironman">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="panther">
-            <img class="front" src="img/panther.png" alt="panther">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="thor">
-            <img class="front" src="img/thor.png" alt="thor">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="scarletwitch">
-            <img class="front" src="img/scarletwitch.png" alt="scarletwitch">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="spiderman">
-            <img class="front" src="img/spiderman.jpg" alt="spiderman">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="vis">
-            <img class="front" src="img/vis.png" alt="vis">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-        <div class="mem-card" data-name="batman">
-            <img class="front" src="img/batman.png" alt="batman">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-        
-        <div class="mem-card" data-name="captain">
-            <img class="front" src="img/captain.png" alt="captain">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="hulk">
-            <img class="front" src="img/hulk.png" alt="hulk">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="firestar">
-            <img class="front" src="img/firestar.png" alt="firestar">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="ironman">
-            <img class="front" src="img/ironman.png" alt="ironman">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="panther">
-            <img class="front" src="img/panther.png" alt="panther">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="thor">
-            <img class="front" src="img/thor.png" alt="thor">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="scarletwitch">
-            <img class="front" src="img/scarletwitch.png" alt="scarletwitch">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="spiderman">
-            <img class="front" src="img/spiderman.jpg" alt="spiderman">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-
-        <div class="mem-card" data-name="vis">
-            <img class="front" src="img/vis.png" alt="vis">
-            <img class="back" src="img/question.jpg" alt="BDrop">
-        </div>
-    </section>
-
-    <!-- <button type="button" onclick="alert('Hello world!')">Click Me!</button> -->
-
-    
-
+        <p id="result"></p>
+        <button id="start">Start Game</button>
+      </div>
     <script src="script.js"></script>
 </body>
 </html>
